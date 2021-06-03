@@ -11,3 +11,29 @@ SELECT name FROM students;
                             SET Points = Points - 50
                             WHERE name= "Alex";
 
+
+
+
+
+
+
+CREATE TABLE graduates(
+ID INT NOTNULL PRIMARY AUTOINCREMENT,
+Name varchar(255) NOTNULL UNIQUE,
+Age int,
+Gender varchar(255),
+Points varchar(255),
+Graduation  varchar(255),
+);
+
+
+SELECT * INTO graduates
+FROM students
+WHERE Name = 'Layal'; 
+
+UPDATE graduates
+SET date = '3/6/2021'
+WHERE Name = Layal;
+
+Delete FROM graduates
+Where Name="laya";
