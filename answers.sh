@@ -37,3 +37,17 @@ WHERE Name = Layal;
 
 Delete FROM graduates
 Where Name="laya";
+
+select employees.Name ,employees.Company,companies.Date 
+FROM companies
+INNER JOIN employees on employees.Company=companies.Name;
+
+select employees.Name 
+FROM companies
+ INNER JOIN employees on employees.Company=companies.Name
+WHERE Date <2000;
+
+select companies.Name 
+FROM companies 
+WHERE companies.Name in (SELECT employees.Company 
+FROM employees WHERE Role="Graphic Designer");
