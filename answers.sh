@@ -51,3 +51,22 @@ select companies.Name
 FROM companies 
 WHERE companies.Name in (SELECT employees.Company 
 FROM employees WHERE Role="Graphic Designer");
+
+
+
+
+SELECT name , Max (Points) 
+ FROM students ;
+
+
+select avg(Points)
+ FROM students ;
+
+ select name FROM students
+ WHERE Points =500;
+
+ select name FROM students
+ WHERE name LIKE "%s%";
+
+ select * FROM students 
+ORDER BY Points DESC;
